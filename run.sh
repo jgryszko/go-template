@@ -13,4 +13,4 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 # Run the Go application with the provided name
-go run ./cmd/myapp --name "$NAME"
+go run ./cmd/helloapp --name "$NAME"

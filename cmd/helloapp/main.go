@@ -13,7 +13,7 @@ func main() {
 	var name string
 
 	var rootCmd = &cobra.Command{
-		Use:   "myapp",
+		Use:   "helloapp",
 		Short: "A simple app that greets people",
 		Run: func(cmd *cobra.Command, args []string) {
 			if name == "" {
