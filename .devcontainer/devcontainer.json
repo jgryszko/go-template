@@ -1,0 +1,27 @@
+{
+    "name": "Go Codespace",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.Go",
+                "ms-vscode.cpptools",
+                "ms-azuretools.vscode-docker",
+                "streetsidesoftware.code-spell-checker",
+                "github.copilot"
+            ],
+            "settings": {
+                "go.toolsGopath": "/go",
+                "go.useLanguageServer": true,
+                "go.formatTool": "gofmt",
+                "go.lintTool": "golangci-lint"
+            }
+        }
+    },
+    "forwardPorts": [2345],
+    "postCreateCommand": "go mod init github.com/your-username/your-repo && go mod tidy",
+    "remoteUser": "root"
+}
