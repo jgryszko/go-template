@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"my-go-project/internal/config"
-	"my-go-project/pkg/utils"
+	"go-template/internal/config"
+	"go-template/utils"
 	"github.com/spf13/cobra"
 )
 
