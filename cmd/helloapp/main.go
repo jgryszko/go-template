@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"go-template/internal/config"
-	"go-template/utils"
+	"go-template/pkg/utils" // Corrected the path to include pkg
 	"github.com/spf13/cobra"
 )
 
